@@ -101,6 +101,12 @@ el html esta linea para cambiar el logo
 }
 
 /* seccion home  */
+/* seccion carusel-slider */
+
+.carousel{
+  margin-top: 85px;
+}
+/* seccion carusel-slider */
 
 
 
@@ -108,7 +114,7 @@ el html esta linea para cambiar el logo
 /* seccion promocional-index*/
 .seccion-promocional, .seccion-plazos, .seccion-app{
     margin-top: 0px;
-    padding-top: 50px;
+    padding-top: 65px;
 }
 
 .seccion-promocional
