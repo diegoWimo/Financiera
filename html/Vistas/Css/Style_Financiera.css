@@ -103,6 +103,11 @@ el html esta linea para cambiar el logo
 /* seccion home  */
 /* seccion carusel-slider */
 
+/* .carousel{
+  margin-top: 85px !important;
+} */
+
+
 .carousel{
   margin-top: 85px;
 }
