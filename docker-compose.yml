@@ -24,4 +24,6 @@ services:
         links:
             - db
         networks:
-            - default
+            - default  
+volumes:
+    persistent:
