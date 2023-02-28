@@ -117,7 +117,7 @@ el html esta linea para cambiar el logo
 
 
 /* seccion promocional-index*/
-.seccion-promocional, .seccion-plazos, .seccion-app{
+.seccion-promocional, .seccion-plazos, .seccion-app, .seccion-formas-pago{
     margin-top: 0px;
     padding-top: 65px;
 }
@@ -265,7 +265,7 @@ h5{
   }
   
   .plazos .btn-buy:hover {
-    background: var(--color-secundario);
+    background: var(--color-suavizador);
   }
   
   .plazos .featured h3 {
@@ -289,7 +289,16 @@ h5{
 
 
 
-/* seccion */
+/* seccion-app*/
+.seccion-app
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: var(--color-primario
+    )
+}
 .btn-app {
   background: var(--color-primario);
   display: inline-block;
@@ -311,11 +320,23 @@ h5{
   margin-right: 15px;
 }
 
+.seccion-promocional ul{
+  list-style: none;
+}
+
 .btn-app:hover {
-  background: var(--color-secundario);
+  background: var(--color-suavizador);
   color: var(--color-background-white);
 }
-/* seccion */
+
+.seccion-app ul{
+  list-style: none;
+}
+
+.seccion-app i{
+  color: var(--color-suavizador);
+}
+/* seccion-app */
 /* seccion counts */
 /*--------------------------------------------------------------
 # Counts
@@ -370,17 +391,77 @@ h5{
 
 
 
+/* seccion formas-pago*/
+
+.seccion-formas-pago
+h1,
+h2,
+h3,
+h4,
+h5{
+    color: var(--color-primario
+    )
+}
+
+
+.seccion-formas-pago ul{
+  list-style: none;
+}
+
+.seccion-formas-pago li{
+  margin: 20px;
+  text-decoration: none;
+}
+
+.icono-lista{
+  width: 15px;
+  height: 15px;
+  margin-bottom: 5px;
+  color: var(--color-suavizador);
+}
+
+/* seccion formas-pago*/
+
+
+
 
 
 /* seccion footer*/
-.footer{
-  margin-top: 50px;
- background: var(--color-primario);
- color: var(--color-background-white);
+.footer img{
+  margin-top: 10px;
+  height: 40px;
+}
+.box-logo{
+  height: 45px;
+  border-top: 1px solid var(--color-primario);
+  border-bottom: 1px solid var(--color-primario);
+}
+.box-logo i{
+  padding: 5px;
+  font-size: 25px;
+  color: var(--color-primario);
 }
 
-.footer h1, .footer h2, .footer h3, .footer h4, .footer h5{
-  color: var(--color-background-white);
+.box-logo i:hover{
+  background: var(--color-suavizador);
+  border-radius: 30%;
+  color: white;
 }
 
+.footer a{
+  color: black;
+  text-decoration: none;
+
+}
+
+.link-footer{
+  margin-top: 20px;
+}
+.link-footer i{
+  color: var(--color-suavizador);
+}
+
+.footer li{
+  margin-top: 10px;
+}
 /* seccion footer*/

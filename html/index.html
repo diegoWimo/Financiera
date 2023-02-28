@@ -5,58 +5,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- seccion de dependencias Externas y estilos  -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="Vistas/Css/Style_Financiera.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- seccion de dependencias Externas y estilos  -->
+
   <title>Credi 7</title>
 </head>
 
 <body>
   <!-- Inicio Navbar-->
-  <nav class="navbar navbar-expand-md bg-nav fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <!--  <img src="Vistas/img/logo_credi_7.png" alt="logo" class="nav-logo"> -->
-        <img src="Vistas/img/logo-azul.png" alt="logo" class="nav-logo">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <svg class="nav-toggler-icon nav-icono" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-          class="bi bi-list" viewBox="0 0 16 16">
-          <path fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-        </svg>
-        <!-- <span class="navbar-toggler-icon"></span> -->
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Catalogo de Equipos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Recuperacion al cliente</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill nav-icon" viewBox="0 0 16 16">
-                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>Sucursales</a>
-          </li>
-          <li class="nav-item d-flex">
-            <a class="nav-link active" aria-current="page" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp nav-icon" viewBox="0 0 16 16">
-                <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-              </svg>
-              Whatsapp</a>
-          </li>
+  <div class="container">
+    <nav class="navbar navbar-expand-md bg-nav fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <!--  <img src="Vistas/img/logo_credi_7.png" alt="logo" class="nav-logo"> -->
+          <img src="Vistas/img/logo-azul.png" alt="logo" class="nav-logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="nav-toggler-icon nav-icono" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+            class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
+          <!-- <span class="navbar-toggler-icon"></span> -->
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Catalogo de Equipos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Recuperacion al cliente</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-geo-alt-fill nav-icon"
+                  viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>Sucursales</a>
+            </li>
+            <li class="nav-item d-flex">
+              <a class="nav-link active" aria-current="page" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-whatsapp nav-icon"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                </svg>
+                Whatsapp</a>
+            </li>
         </div>
         </ul>
       </div>
-    </div>
+  </div>
   </nav>
+  </div>
   <!-- Fin Navbar-->
 
 
@@ -91,19 +102,20 @@
   <!-- Fin de slider -->
   <!-- inicioseccion requerimientos -->
 
-  <div class="container seccion-promocional" >
+  <div class="container seccion-promocional">
     <div class="row align-items-center justify-content-center">
       <div class="col-md-5 col-8 items-center order-2 order-md-1">
         <img class="img-fluid" src="Vistas/img/details-1.png" alt="">
       </div>
       <div class="col-md-7 col-12 order-1 order-md-2">
-       <div data-aos="fade-up" data-aos-duration="1500">
-        <h1 class="text-center"><strong>!Obtén tu credito en solo 5 minutos¡</strong></h1>
-        <p class="h5 my-4">En cualquiera de nuestras sucursales podras obtener tu autorizacion de credito y estrenar celular
-          en menos de
-          ¡5 minutos!
-          solo necesitaras los siguientes documnetos.</p>
-       </div>
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="text-center"><strong>!Obtén tu credito en solo 5 minutos¡</strong></h1>
+          <p class="h5 my-4">En cualquiera de nuestras sucursales podras obtener tu autorizacion de credito y estrenar
+            celular
+            en menos de
+            ¡5 minutos!
+            solo necesitaras los siguientes documnetos.</p>
+        </div>
 
         <div class="contenedor-icono col-" data-aos="zoom-in-left" data-aos-duration="1000">
           <svg class="icono" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
@@ -200,14 +212,14 @@
   <!-- Fin de seccion de plazos -->
   <section class="plazos">
     <div class="container seccion-plazos">
-      <div class="seccion-titulo text-center"  data-aos="fade-up" data-aos-duration="1500">
+      <div class="seccion-titulo text-center" data-aos="fade-up" data-aos-duration="1500">
         <h1><Strong>Obten los mejores plazos con nosotros y estrena ¡Ya!</Strong></h1>
         <p>Plazos sujetos a cambio</p>
       </div>
 
       <div class="row justify-content-around">
 
-        <div class="col-lg-4 col-md-12 mt-auto"  data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-4 col-md-12 mt-auto" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box featured">
             <h3>Plazo de 24 meses</h3>
             <h4>Pagos desde:</h4>
@@ -225,7 +237,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 mt-3"  data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-4 col-md-12 mt-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box">
             <h3>Plazo de 39 meses</h3>
             <h4>Pagos desde:</h4>
@@ -243,7 +255,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-12 mt-3"  data-aos="zoom-in" data-aos-duration="2000">
+        <div class="col-lg-4 col-md-12 mt-3" data-aos="zoom-in" data-aos-duration="2000">
           <div class="box featured">
             <h3>Plazo de 45 meses</h3>
             <h4>Pagos desde:</h4>
@@ -265,8 +277,8 @@
   <!-- Fin de seccion de plazos -->
   <!-- Inicio de seccion-promotional 10% de descuento-->
   <div class="container seccion-promocional">
-    <div class="row justify-content-evenly"  >
-      <div class="col-12 col-md-5 align-self-center"  data-aos="zoom-in-right" data-aos-duration="1500">
+    <div class="row justify-content-evenly">
+      <div class="col-12 col-md-5 align-self-center" data-aos="zoom-in-right" data-aos-duration="1500">
         <h1 class="text-center"><strong>Obten un 10% de descuento por pago temprano</strong></h1>
         <p><strong>Con nuestro programa de recompensa por pago temprano</strong> Paga tu semanalidad con puntualidad
           y obten un <strong>10% de descuento</strong>, conoce todos los sitios
@@ -290,7 +302,7 @@
   <section id="counts" class="counts">
     <div class="container">
 
-      <div class="row" >
+      <div class="row">
 
         <div class="col-lg-3 col-md-6">
           <div class="count-box">
@@ -341,7 +353,7 @@
 
   <!-- inicio de seccion-promotional conoce nuestra app-->
 
-  <div class="container seccion-promocional">
+  <div class="container seccion-app">
     <div class="row align-items-center justify-content-around" data-aos="fade-down" data-aos-duration="1500">
       <div class="col-md-4 col-sm-4 col-6">
         <img src="Vistas/img/img-app/unnamed2.png" alt="" class="img-fluid rounded-3">
@@ -356,11 +368,12 @@
           <div class="col-md-6 col-12 text-start">
             <h3 class="my-3 text-center">Desde la app</h3>
             <ul>
-              <li class="my-3">Conoce tu saldo pendiente.</li>
-              <li class="my-3">Realiiza tu pago temprano</li>
-              <li class="my-3">Realiiza tu pago temprano</li>
-              <li class="my-3">Realiiza tu pago temprano</li>
-              <li class="my-3">Realiiza tu pago temprano</li>
+              <li class="my-4"><i class="bi bi-chevron-right"></i>Conoce tu saldo pendiente.</li>
+              <li class="my-4"><i class="bi bi-chevron-right"></i>Realiiza tu pago temprano</li>
+              <li class="my-4"><i class="bi bi-chevron-right"></i>Realiiza tu pago temprano</li>
+              <li class="my-4"><i class="bi bi-chevron-right"></i>Realiiza tu pago temprano</li>
+              <li class="my-4"><i class="bi bi-chevron-right"></i>Realiiza tu pago temprano</li>
+
             </ul>
           </div>
         </div>
@@ -379,20 +392,83 @@
   <!-- Fin de seccion-promotional conoce nuestra app-->
 
   <!-- seccion formas de pago -->
+  <div class="container seccion-formas-pago">
+    <div class="row justify-content-evenly">
+      <div class="col-12 col-md-7 align-self-center" data-aos="zoom-in-right" data-aos-duration="1500">
+        <h1 class="text-center my-4"><strong>Realiza tu pago semanal en la siguientes entidades</strong></h1>
+        <p class="text-center my-4"><strong>Conoce donde puedes realizar tu pago:</strong>
 
+        </p>
+        <ul>
+          <li>
+            <svg class="icono-lista" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            OXXO
+          </li>
+          <li>
+            <svg class="icono-lista" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            Sucursales
+          </li>
+          <li>
+            <svg class="icono-lista" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-chevron-right">
+              <path fill-rule="evenodd"
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+            </svg>
+            Transferencia electronica desde la app
+          </li>
+        </ul>
+      </div>
+      <div class="col-8 col-md-5" data-aos="zoom-in-left" data-aos-duration="1500">
+        <img class="img-fluid" src="Vistas/img/details-4.png" alt="">
+      </div>
+    </div>
+  </div>
   <!-- seccion formas de pago -->
 
 
   <!-- ======= Footer ======= -->
+  <div class="container footer">
+    <div class="row box-logo align-items-center justify-content-evenly">
+      <div class="col-1"><a href=""><i class="bi bi-youtube"></i></a></div>
+      <div class="col-1"><a href=""><i class="bi bi-twitter"></i></a></div>
+      <div class="col-1"><a href=""><i class="bi bi-instagram"></i></a></div>
+      <div class="col-1"><a href=""><i class="bi bi-facebook"></i></a></div>
+    </div>
+    <div class="row justify-content-evenly">
+      <div class="col-4">
+        <h3>Contactanos</h3>
+        <p><strong>Horario:</strong></p>
+        <p>Lunes a viernes.</p>
+        <p>9:00 - 18:00 Hrs.</p>
 
-  <div class="container-fluid footer">
-    <div class="row justify-content-center">
-      <div class="col-6">
-        <h1 class="text-center">Seccion Footer</h1>
-        <h3 class="text-center">Copy right legolas_lothbrok</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, odio ea deleniti quam cupiditate autem
-          laudantium maiores laborum quasi incidunt iure ad excepturi amet porro aliquam aut labore accusantium nobis!
-        </p>
+        <p><strong>Teléfono Atencion al cliente:</strong></p>
+        <p>(52) 33 3852 3938</p>
+      </div>
+      <div class="col-4">
+        <h3>Legales</h3>
+          <div class="link-footer">
+            <a href=""><i class="bi bi-chevron-right"></i>Aviso de privacidad</a>
+          </div>
+          <div class="link-footer">
+            <a href=""><i class="bi bi-chevron-right"></i>Terminos y Condiciones</a>
+          </div>
+      </div>
+     
+      <div class="col-4">
+        <h3>Instala la app</h3>
+        <div class="link-footer">
+          <a href=""><i class="bi bi-chevron-right"></i>Google play</a>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-end">
+      <div class="col-12 box-logo text-center">
+        <p>Copy Right created by lothbrok in 27/02/2023 © Virme Mobile S. A. De C. V.</p>
       </div>
     </div>
   </div>
