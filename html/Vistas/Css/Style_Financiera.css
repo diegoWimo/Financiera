@@ -387,6 +387,14 @@ h5{
   font-size: 14px;
 }
 
+.count-box:hover i{
+  background-color:white;
+  color: var(--color-suavizador);
+  border: 1px solid var(--color-suavizador);
+
+}
+
+
 /* seccion counts*/
 
 
