@@ -2,5 +2,5 @@
 
 require_once 'Controladores/PlantillaControlador.php';
 
-PlantillaControlador::correrPlantilla();
+PlantillaControlador::plantillaMain();
 

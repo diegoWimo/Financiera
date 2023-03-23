@@ -483,3 +483,18 @@ h5{
 }
 
 /* seccion footer*/
+
+
+
+
+/* seccion de estilos para el login  */
+.login{
+  background: #EDECEC;
+  height: 680px;
+}
+.item-izquierdo{
+  background-color: #F6F9FC;
+}
+.item-derecho{
+  background: white;
+}/* fin de estilos para el login  */
