@@ -15,8 +15,22 @@ class Conexion{
         $this->db=$db;
     }
     public static function conectar(){
-        /* $prueba = "mysql:host={$this->host}; dbname={$this->db}; charset=utf8mb4"; */
-        try {
+       try {
+        $conexion=new PDO("mysql:host=localhost; dbname=Financiera","root","");
+        $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        return $conexion;
+
+       } catch (\Throwable $th) {
+        die("Error:" . $th->getMessage());
+       }
+        
+    }
+
+}
+
+
+/* try {
+            
         $email_usario="lego@gmail.com";
         $password_usuario="12345";
 
@@ -31,19 +45,17 @@ class Conexion{
         $resultado->execute();
 
         $numero_registro=$resultado->rowCount();
+        $arreglo_resultado=$resultado->fetchAll(PDO::FETCH_ASSOC);
 
         if($numero_registro!=0){
-
+           $resultado;
+           echo '<script> console.log('.$arreglo_resultado[1]['EMAIL'].');</script>';
         }else{
-
+            echo '<script> console.log();</script>';
         }
-
         }
          catch (\Throwable $th) {
             die("Error:" . $th->getMessage());
-        }
-    }
-
-}
+        } */
 
 ?>

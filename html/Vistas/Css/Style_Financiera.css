@@ -489,12 +489,34 @@ h5{
 
 /* seccion de estilos para el login  */
 .login{
-  background: #EDECEC;
-  height: 680px;
+  
+  /*  background: #EDECEC;  */
+  
 }
 .item-izquierdo{
   background-color: #F6F9FC;
+  
 }
 .item-derecho{
   background: white;
+  border: #F6F9FC solid 4px;
 }/* fin de estilos para el login  */
+
+.login h1{
+  padding-top: 10px ;
+  margin: 20px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.login label{
+  padding-top: 20px;
+}
+.login i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+
+.login .item-izquierdo p{
+  font-size: 1.25rem;
+}
