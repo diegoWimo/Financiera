@@ -1,4 +1,8 @@
 <?php
+include 'Controladores/UserController.php';
+include 'Modelos/UserModel.php';
+include 'Modelos/Conexion.php';
+
 
 class PlantillaControlador
 {
@@ -26,9 +30,11 @@ class PlantillaControlador
         if (isset($_GET['ruta'])) {
             if (isset($_SESSION['autentificacion']) && $_SESSION['autentificacion'] === 'ok') {
                 include 'Vistas/Componentes/NavbarAdmin.php';
+                
                 /* echo '<h1>Aqui decidiremos el ruteo una vez iniciada la sesion.</h1>'; */
                 if($_GET['ruta']=='salir'){
-                    include 'Vistas/Componentes/Salir.php';
+                    UserController::cerrarSesion();
+                   /* include 'Vistas/Componentes/Salir.php'; */
                 }
 
             } else {

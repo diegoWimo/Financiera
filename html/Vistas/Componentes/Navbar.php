@@ -1,6 +1,6 @@
 <!-- Inicio Navbar-->
 <div class="container">
-    <nav class="navbar navbar-expand-md bg-nav fixed-top">
+    <nav class="navbar navbar-expand-md bg-nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img src="Vistas/img/logo-azul.png" alt="logo" class="nav-logo">

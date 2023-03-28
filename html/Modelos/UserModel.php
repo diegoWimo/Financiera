@@ -1,5 +1,5 @@
 <?php
-    include 'Conexion.php';
+    
     class UserModel{
         public static function consultarUsuario($userName, $pass){
           try {

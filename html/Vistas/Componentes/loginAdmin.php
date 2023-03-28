@@ -1,6 +1,4 @@
-<?php
-include 'Controladores/UserController.php';
-?>
+
 <div class="login vh-100">
     <div class="container-fluid ">
         <div class="row justify-content-center pt-5">

@@ -1,5 +1,5 @@
 <?php
-include '<Modelos/UserModel.php';
+
 
 class UserController
 {
@@ -29,5 +29,13 @@ class UserController
             }
 
         }
+    }
+
+    public static function cerrarSesion(){
+        session_destroy();
+
+    echo '<script>
+    window.location="login";
+    </script>';
     }
 }
