@@ -15,7 +15,17 @@ class UserController
                     $_SESSION['autentificacion']='ok';
                     $_SESSION['userEmail'] = $respuestaUsuario['respuesta']['EMAIL'];
                     $_SESSION['userName'] = $respuestaUsuario['respuesta']['NOMBRE'];
-                    echo '<script> window.location= "dashboard";</script>';
+                    
+                    echo ' <script>
+                    Swal.fire({
+                        icon: "success",
+                        text:"Bienvenido",
+                    }).then((result) => {
+                        if (result.value) {
+                            window.location = "dashboard";
+                        }
+                    });
+                </script>';
                 
                     
                 } else {
@@ -34,8 +44,18 @@ class UserController
     public static function cerrarSesion(){
         session_destroy();
 
-    echo '<script>
-    window.location="login";
-    </script>';
-    }
+         echo ' <script>
+                    Swal.fire({
+                        icon: "success",
+                        text:"Godbye",
+                    }).then((result) => {
+                        if (result.value) {
+                            window.location = "dashboard";
+                        }
+                    });
+                </script>';
+
+    
+   
+    } 
 }

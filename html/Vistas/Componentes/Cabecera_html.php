@@ -16,6 +16,7 @@
 
   <title>Credi 7</title>
   <link rel="icon" href="Vistas/img/icon.png">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>

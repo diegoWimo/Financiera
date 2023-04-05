@@ -23,7 +23,80 @@
 
 <body>
 
-    <h1>Hello cards para venta de telefonos
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button class="btn btn-primary" onclick="ejemploAlerta()">Alerta
+                </button>
+                <button class="btn btn-primary" onclick="ejemploAlertThen()">Alerta Then
+                </button>
+                <button class="btn btn-primary" onclick="ejemploAlertLink()">Alerta Link
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        function ejemploAlerta() {
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+            ).then((result) => {
+                if (result.value) {
+                    window.location = index.php;
+                    console.log("entramos al redireccionamiento");
+                }
+            }).catch((err) => {
+
+            });
+        }
+
+        function ejemploAlertThen() {
+            Swal.fire(
+                {
+                    icon: 'success',
+                    text: 'Alert con then'
+
+                }
+            ).then((result) => {
+                if (result.value) {
+                    console.log("cambio de pagina");
+                }
+            })
+                ;
+        }
+        function ejemploAlertLink() {
+            Swal.fire(
+                {
+                    icon: 'error',
+                    tittle: 'Esta opcion no es valida lo siento',
+                    text: 'Something went wrong',
+                    footer: '<a href="index.php">ve a nuesto inicio</a>'
+                }
+            );
+
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+   
+</body>
+
+</html>
+
+
+<!--     <h1>Hello cards para venta de telefonos
     </h1>
 
     <div class="container">
@@ -39,15 +112,4 @@
                   </div>
             </div>
         </div>
-    </div>
-   
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-        </script>
-</body>
-
-</html>
+    </div> -->
