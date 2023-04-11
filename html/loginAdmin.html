@@ -23,6 +23,23 @@
 
 <body>
 
+        <h1>Hello cards para venta de telefonos
+    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <div class="card" style="width: 18rem;">
+                    <img src="/html/Vistas/img/equipos-carrusel/Honor-X7.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -32,6 +49,8 @@
                 </button>
                 <button class="btn btn-primary" onclick="ejemploAlertLink()">Alerta Link
                 </button>
+
+                <a href="#" class="btn btn-primary" onclick="ejemploEtiquetaLink()">link con class=btn</a>
             </div>
         </div>
     </div>
@@ -78,10 +97,19 @@
                     icon: 'error',
                     tittle: 'Esta opcion no es valida lo siento',
                     text: 'Something went wrong',
-                    footer: '<a href="index.php">ve a nuesto inicio</a>'
+                    footer: '<a href="index.php" class="btn btn-primary">ve a nuesto inicio</a>'
                 }
             );
 
+        }
+
+
+        function ejemploEtiquetaLink(){
+            Swal.fire({
+                icon: 'success',
+                title: 'Alert',
+                text:'alerta desde la etiqueta link'
+            });
         }
 
 
@@ -96,20 +124,3 @@
 </html>
 
 
-<!--     <h1>Hello cards para venta de telefonos
-    </h1>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="/html/Vistas/img/equipos-carrusel/Honor-X7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div> -->

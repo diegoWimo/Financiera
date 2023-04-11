@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+ .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px;
+  color: #212529;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.sidebar-menu a:hover {
+  background-color: #dee2e6;
+}
+
+.sidebar.minimized {
+  width: 60px;
+}
+
+.sidebar.minimized .sidebar-header {
+  justify-content: center;
+}
+
+.sidebar.minimized .sidebar-menu li {
+  text-align: center;
+}
+
+.sidebar.minimized .sidebar-menu a {
+  padding: 10px 5px;
+  font-size: 0;
+  overflow: hidden;
+}
+
+.sidebar.minimized .sidebar-menu a:before {
+  content: "\f0da";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 20px;
+  color: #212529;
+  display: block;
+  transform: rotate(-90deg) translateX(-50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.sidebar.minimized .sidebar-menu a:hover:before {
+  color: #007bff;
+}
+
+.sidebar.minimized .sidebar-header .toggle-sidebar {
+  transform: rotate(-90deg) translateX(-50%);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="sidebar">
+                    <div class="sidebar-header">
+                      <h3>Menú</h3>
+                      <button class="btn btn-sm btn-primary toggle-sidebar">Minimizar</button>
+                    </div>
+                    <ul class="sidebar-menu">
+                      <li><a href="#">Inicio</a></li>
+                      <li><a href="#">Acerca de</a></li>
+                      <li><a href="#">Servicios</a></li>
+                      <li><a href="#">Contacto</a></li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col">
+            <h5 class="">hola mundo </h5>
+        </div>
+      </div>
+      
+</body>
+<script>
+const toggleSidebarBtn = document.querySelector('.toggle-sidebar');
+const sidebar = document.querySelector('.sidebar');
+
+toggleSidebarBtn.addEventListener('click', function() {
+  sidebar.classList.toggle('minimized');
+  
+  if (sidebar.classList.contains('minimized')) {
+    toggleSidebarBtn.textContent = 'Ampliar';
+  } else {
+    toggleSidebarBtn.textContent = 'Minimizar';
+  }
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</html>
