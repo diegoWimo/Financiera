@@ -18,6 +18,10 @@ class PlantillaControlador
         include 'Vistas/Componentes/SeccionPagos.php';
         include 'Vistas/Componentes/Footer.php';
     }
+    public static function catalogoCelulares(){
+        include 'Vistas/Componentes/Navbar.php';
+        include 'Vistas/Componentes/Catalogo_celulares.php';
+    }
 
     public static function plantillaMain()
     {
@@ -40,7 +44,9 @@ class PlantillaControlador
             } else {
                 if ($_GET['ruta'] == 'login') {
                     include 'Vistas/Componentes/loginAdmin.php';
-                } else {
+                } elseif($_GET['ruta'] == 'catalogo') {
+                    PlantillaControlador::catalogoCelulares();
+                }else{
                     PlantillaControlador::inicioCliente();
                 }
             }

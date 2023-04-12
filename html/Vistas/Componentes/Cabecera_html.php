@@ -11,6 +11,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="Vistas/Css/Style_Financiera.css?v=<?php echo rand(); ?>">
+  <link rel="stylesheet" href="Vistas/Css/Card_cel.css?v=<?php echo rand(); ?>">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- seccion de dependencias Externas y estilos  -->
 

@@ -1,0 +1,123 @@
+ /* seccion fuentes de google inicio*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+ /* seccion fuentes de google fin*/
+
+   /* -------------------tipo de card Columna 2 */
+   .bold {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card {
+    margin-top: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
+    border-radius: 20px !important;
+    height: 38rem;
+    
+}
+
+
+.card:hover {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
+}
+.card-body {
+    border-top: 1px solid rgba(0, 0, 0, .125);
+    padding: 0px 10px 0px 16px !important;
+   
+}
+
+.card img {
+    /*   border: #000000 solid 2px; */
+    height: 275px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-container{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-card {
+    margin-top: 2px;
+    margin-bottom: 0%;
+   
+}
+
+.item-card .h4{
+}
+
+.item-card .envio {
+    /* color: var(--color-verde-whats); */
+    color: var(--color-verde);
+    /* color: rgb(0, 206, 28); */
+    margin-bottom: 0%;  
+
+}
+
+.item-card i {
+    margin-left: 10px;
+    font-size: 25px;
+}
+.item-card a{
+    text-decoration: none;
+}
+.btn-card {
+    width: 100%;
+    background: var(--color-primario) !important;
+    color: var(--color-background-white) !important;
+    font-weight: bold !important;
+
+}
+
+
+
+.item-enganche {
+    font-size: 25px;
+}
+.precio-lineado{
+    text-decoration: line-through;
+}
+
+.item-descuento{
+    background-color:var(--color-primario);
+    color: var(--color-background-white);
+    border-radius: 8px;
+    font-size: .85rem;
+    padding: 2px;
+    padding-right:3px;
+}
+.item-card .title-card{
+    color: var(--color-primario);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.btn-card-buy{
+    /* border: var(--color-primario) 1.5px solid !important; */
+    border-top: 1px solid rgba(0, 0, 0, .125) !important;
+    border-radius: 0% !important;
+    border-radius: 0px 0px 20px 20px !important;
+    font-weight: bold;
+   
+}
+.btn-card-Addtocar{
+    border: var() 1.5px solid !important;
+    border-radius: 0px !important;
+    border-top: 1px solid rgba(0, 0, 0, .125) !important;
+   
+}
+.btn-card-buy:hover{
+    border: var(--color-primario) 1.5px solid !important;
+    border-radius: 0px 0px 20px 20px !important;
+    color: var(--color-primario) !important;
+}
+.btn-card-Addtocar:hover{
+    border: var(--color-primario) 1.5px solid !important;
+    color: var(--color-primario) !important;
+}
+
+
+/* -------------------tipo de card Columna 2 */

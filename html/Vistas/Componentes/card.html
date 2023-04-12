@@ -2,10 +2,11 @@
 <html lang="en">
 <style>
     /* seccion fuentes de google inicio*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
     /* seccion fuentes de google fin*/
     :root {
-       /*  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
+        /*  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); */
         /* colores primarios por financiera*/
         /* --color-primario: rgb(169, 6, 209); */
         --color-secundario: #cf2530;
@@ -15,9 +16,7 @@
         --color-suavizador: #16BCE2;
         --color-background-white: hsl(0, 0%, 100%);
         --color-togler: rgba(28255, 129, 189);
-        --color-verde-whats:#25d366;
-        --color-verde2:#1ca807;
-        --color-verde:#117c00;
+        --color-verde: #1ca807;
         /* rojo */
     }
 
@@ -28,15 +27,22 @@
     }
 
     .card {
-        margin-top: 30px;
+        margin-top: 15px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
         border-radius: 20px !important;
-        height: 620px;
-        
+        height: 38rem;
+
     }
+
 
     .card:hover {
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.12);
+    }
+
+    .card-body {
+        border-top: 1px solid rgba(0, 0, 0, .125);
+        padding: 0px 10px 0px 16px !important;
+
     }
 
     .card img {
@@ -46,27 +52,26 @@
         margin-right: auto;
     }
 
-    .img-container{  
+    .img-container {
         display: flex;
         justify-content: center;
         align-items: center;
     }
-   
+
 
     .item-card {
         margin-top: 2px;
         margin-bottom: 0%;
-       
+
     }
 
-    .item-card .h4{
-    }
+    .item-card .h4 {}
 
     .item-card .envio {
         /* color: var(--color-verde-whats); */
-        color: var(--color-verde2);
+        color: var(--color-verde);
         /* color: rgb(0, 206, 28); */
-        margin-bottom: 0%;  
+        margin-bottom: 0%;
 
     }
 
@@ -74,9 +79,11 @@
         margin-left: 10px;
         font-size: 25px;
     }
-    .item-card a{
+
+    .item-card a {
         text-decoration: none;
     }
+
     .btn-card {
         width: 100%;
         background: var(--color-primario) !important;
@@ -85,31 +92,32 @@
 
     }
 
-    .card-body {
-        border-top: 1px solid rgba(0, 0, 0, .125);
-    }
+
 
     .item-enganche {
         font-size: 25px;
     }
-    .precio-lineado{
+
+    .precio-lineado {
         text-decoration: line-through;
     }
-   
-    .item-descuento{
-        background-color:var(--color-primario);
+
+    .item-descuento {
+        background-color: var(--color-primario);
         color: var(--color-background-white);
         border-radius: 8px;
         font-size: .85rem;
         padding: 2px;
-        padding-right:3px;
+        padding-right: 3px;
     }
-    .item-card .title-card{
+
+    .item-card .title-card {
         color: var(--color-primario);
         font-family: 'Poppins', sans-serif;
     }
-/* en esta seccion estan los estilos de los dos botones */
-/*     .btn-card-buy {
+
+    /* en esta seccion estan los estilos de los dos botones */
+    /*     .btn-card-buy {
         height: 40px;
         text-align: center;
         text-decoration: none !important;
@@ -143,27 +151,33 @@
     /* fin seccion de botones */
 
 
-    .btn-card-buy{
+    .btn-card-buy {
         /* border: var(--color-primario) 1.5px solid !important; */
         border-top: 1px solid rgba(0, 0, 0, .125) !important;
         border-radius: 0% !important;
         border-radius: 0px 0px 20px 20px !important;
         font-weight: bold;
+
     }
-    .btn-card-Addtocar{
+
+    .btn-card-Addtocar {
         border: var() 1.5px solid !important;
         border-radius: 0px !important;
         border-top: 1px solid rgba(0, 0, 0, .125) !important;
-       
+
     }
-    .btn-card-buy:hover{
+
+    .btn-card-buy:hover {
         border: var(--color-primario) 1.5px solid !important;
         border-radius: 0px 0px 20px 20px !important;
+        color: var(--color-primario) !important;
     }
-    .btn-card-Addtocar:hover{
-        border: var(--color-terceario) 1.5px solid !important;
+
+    .btn-card-Addtocar:hover {
+        border: var(--color-primario) 1.5px solid !important;
+        color: var(--color-primario) !important;
     }
-   
+
 
     /* -------------------tipo de card Columna 2 */
     /* -------------------tipo de card Columna 3 */
@@ -186,34 +200,10 @@
 </head>
 
 <body>
-    
+
     <div class="container-fluid">
         <div class="row">
-            <div class="col-12 col-md-6 col-xl-3 col-xxl-2">
-                <div class="card">
-                    <div>
-                        <img src="../img/equipos-carrusel/Honor-X8.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="card-body">
-                        <h2 class="text-center">Honor x8 otra tipografia</h2>
-                        <p class="card-text text-center">Lorem ipsum dolor sit amet.</p>
 
-                        <div class="item-card">
-                            <h5 class="text-center d-inline">Enganche<br>desde: $500</h5>
-                        </div>
-                        <div class="item-card">
-                            <p class="d-inline">Pago Semanal: </p>
-                            <h5 class="text-center d-inline">$250</h5>
-                        </div>
-                        <div class="item-card">
-                            <p class="envio">Envío Gratis<i class="bi bi-truck"></i></p>
-                        </div>
-                        <div class="">
-                            <button type="button" class="btn btn-card">Add</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="col-12 col-md-6 col-xl-3 col-xxl-2">
                 <div class="card">
                     <div class="img-container">
@@ -223,17 +213,17 @@
                         <div class="item-card">
                             <!-- aqui se tiene que limitar a 30 caracteres -->
                             <p class="h4 title-card">Honor-X8</p>
-                           <!--  <p class="h4 title-card">Samsung Galaxy A40 Lorem ipsum</p> -->
+                            <!--  <p class="h4 title-card">Samsung Galaxy A40 Lorem ipsum</p> -->
                             <p class="my-0">Enganche desde: <span class="h4">$500MXN</span></p>
-                            
+
                         </div>
                         <div class="item-card">
                             <p class=" m-0 d-inline">Pago Semanal: <span class="precio-lineado">$500MXN</span>
-                            <span class="item-descuento">-50%</span>
+                                <span class="item-descuento">-50%</span>
                             </p>
                         </div>
                         <div class="item-card">
-                            <p class="d-inline">Pago Semanal con desc <br>Desde: <span class="h4">$250 MXN</span></p>
+                            <p class="d-inline">Pago Semanal con desc <br>desde: <span class="h4">$250 MXN</span></p>
                         </div>
                         <div class="item-card">
                             <a href="">
@@ -243,7 +233,7 @@
                     </div>
                     <a href="" class=" btn btn-card-Addtocar">
                         <div>
-                            <i class="bi bi-cart3"></i> Agregar a tu carro 
+                            <i class="bi bi-cart3"></i> Agregar a tu carro
                         </div>
                     </a>
                     <a href="" class="btn btn-card-buy">
@@ -258,20 +248,20 @@
                     <div class="img-container">
                         <img src="../img/equipos-carrusel/Honor-X8-modificacion_tamaño.jpg" alt="" class="img-fluid">
                     </div>
-                    
+
                     <div class="card-body">
                         <div class="item-card">
                             <p class="h4 title-card">Samsung Galaxy A50</p>
                             <p class="my-0">Enganche desde: <span class="h4">$500MXN</span></p>
-                            
+
                         </div>
                         <div class="item-card">
                             <p class=" m-0 d-inline">Pago Semanal: <span class="precio-lineado">$500MXN</span>
-                            <span class="item-descuento">-50%</span>
+                                <span class="item-descuento">-50%</span>
                             </p>
                         </div>
                         <div class="item-card">
-                            <p class="d-inline">Pago Semanal con desc <br>Desde: <span class="h4">$250 MXN</span></p>
+                            <p class="d-inline">Pago Semanal con desc <br>desde: <span class="h4">$250 MXN</span></p>
                         </div>
                         <div class="item-card">
                             <a href="">
@@ -281,7 +271,7 @@
                     </div>
                     <a href="" class=" btn btn-card-Addtocar">
                         <div>
-                            <i class="bi bi-cart3"></i> Agregar a tu carro 
+                            <i class="bi bi-cart3"></i> Agregar a tu carro
                         </div>
                     </a>
                     <a href="" class="btn btn-card-buy">
@@ -296,20 +286,20 @@
                     <div class="img-container">
                         <img src="../img/equipos-carrusel/Motorola-e40.jpg" alt="" class="img-fluid">
                     </div>
-                    
+
                     <div class="card-body">
                         <div class="item-card">
                             <p class="h4 title-card">Motorola E40</p>
                             <p class="my-0">Enganche desde: <span class="h4">$500MXN</span></p>
-                            
+
                         </div>
                         <div class="item-card">
                             <p class=" m-0 d-inline">Pago Semanal: <span class="precio-lineado">$500MXN</span>
-                            <span class="item-descuento">-50%</span>
+                                <span class="item-descuento">-50%</span>
                             </p>
                         </div>
                         <div class="item-card">
-                            <p class="d-inline">Pago Semanal con desc <br>Desde: <span class="h4">$250 MXN</span></p>
+                            <p class="d-inline">Pago Semanal con desc <br>desde: <span class="h4">$250 MXN</span></p>
                         </div>
                         <div class="item-card">
                             <a href="">
@@ -319,7 +309,7 @@
                     </div>
                     <a href="" class=" btn btn-card-Addtocar">
                         <div>
-                            <i class="bi bi-cart3"></i> Agregar a tu carro 
+                            <i class="bi bi-cart3"></i> Agregar a tu carro
                         </div>
                     </a>
                     <a href="" class="btn btn-card-buy">
