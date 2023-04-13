@@ -3,14 +3,24 @@
     /* --color-primario: rgb(169, 6, 209); */
     --color-secundario: #cf2530;
     --color-terceario: #FFEC01;
-    --color-suavizador-morado: #7658A5;
-     --color-primario: #0081bd; 
-     --color-suavizador: #16BCE2; 
+    --color-suavizador-morado: #05640b;
+    /*  --color-primario: #0081bd; */ 
+    --color-primario:#04A070;
+    --color-suavizador: #05640b; 
+    /* --color-suavizador: #16BCE2;  */
     --color-background-white: hsl(0, 0%, 100%);
     --color-togler: rgba(28255, 129, 189);
     /* rojo */
 }
-
+/* seccion general */
+.img-fluid{
+  border-radius: 20px;
+}
+.text-app{
+  color: var(--color-primario) !important;
+  font-weight: bold;
+}
+/* seccion general */
 body {
     font-family: "Poppins", sans-serif;
    /*  background: #f8f8f8; */
@@ -52,7 +62,7 @@ background: var(--color-background-white);
 }
 
 .nav-logo {
-    width: 130px;
+    width: 110px;
 }
 
 .nav-link:hover {
@@ -115,7 +125,7 @@ el html esta linea para cambiar el logo
 
 
 .carousel{
-  margin-top: 85px;
+  margin-top: 135px;
 }
 /* seccion carusel-slider */
 
