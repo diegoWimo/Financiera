@@ -12,7 +12,8 @@
           <div class="box featured">
             <h3>Plazo de 24 meses</h3>
             <h4>Pagos desde:</h4>
-            <h4><sup>$</sup>350<span> / month</span></h4>
+            <?php $monto_semanal=350;   ?>
+            <h4><sup>$</sup><?php echo $monto_semanal;?><span> / week</span></h4>
             <ul>
               <li>Con hasta 10% de descuento en cada pago</li>
               <li>Huawei</li>
@@ -21,7 +22,7 @@
               <li>Xiaomi</li>
             </ul>
             <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+              <a href="catalogo" class="btn-buy">Buy Now</a>
             </div>
           </div>
         </div>
@@ -30,7 +31,7 @@
           <div class="box">
             <h3>Plazo de 39 meses</h3>
             <h4>Pagos desde:</h4>
-            <h4><sup>$</sup>250<span> / month</span></h4>
+            <h4><sup>$</sup>250<span> / week</span></h4>
             <ul>
               <li>Con hasta 10% de descuento en cada pago</li>
               <li>Huawei</li>
@@ -39,7 +40,7 @@
               <li>Xiaomi</li>
             </ul>
             <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+              <a href="catalogo" class="btn-buy">Buy Now</a>
             </div>
           </div>
         </div>
@@ -48,7 +49,7 @@
           <div class="box featured">
             <h3>Plazo de 45 meses</h3>
             <h4>Pagos desde:</h4>
-            <h4><sup>$</sup>150<span> / month</span></h4>
+            <h4><sup>$</sup>150<span> / week</span></h4>
             <ul>
               <li>Con hasta 10% de descuento en cada pago</li>
               <li>Huawei</li>
@@ -57,7 +58,7 @@
               <li>Xiaomi</li>
             </ul>
             <div class="btn-wrap">
-              <a href="#" class="btn-buy">Buy Now</a>
+              <a href="catalogo" class="btn-buy">Buy Now</a>
             </div>
           </div>
         </div>

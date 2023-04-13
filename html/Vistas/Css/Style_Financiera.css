@@ -135,8 +135,7 @@ h2,
 h3,
 h4,
 h5{
-    color: var(--color-primario
-    )
+    color: var(--color-primario);
 }
 
 .contenedor-icono{
@@ -147,6 +146,7 @@ h5{
     border-radius: 20px;
 }
 
+
 .icono{
     width: 100px;
     height: 100px;
@@ -154,6 +154,7 @@ h5{
     margin-right: 25px;
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 50px;
     color: var(--color-primario);
 }
 
