@@ -144,23 +144,30 @@ h5{
     display: flex;
     /* background: #f8f8f8; */
     border-radius: 20px;
+    border: var(--color-primario) 1px solid;
 }
 
 
 .icono{
-    width: 100px;
+    /* width: 100px;
     height: 100px;
     padding-top: 1px;
     margin-right: 25px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
     font-size: 50px;
     color: var(--color-primario);
+}
+.info-icono{
+  margin-left: 20px;
 }
 
 
 .contenedor-icono:hover .icono, .contenedor-icono:hover h4{
     color: var(--color-suavizador-morado);
+}
+.contenedor-icono:hover{
+  border: var(--color-suavizador-morado)  1px solid;
 }
 /* .contenedor-icono:hover h4{
     color: var(--color-secundario);
