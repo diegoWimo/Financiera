@@ -8,8 +8,10 @@
      --color-suavizador: #16BCE2; 
     --color-background-white: hsl(0, 0%, 100%);
     --color-togler: rgba(28255, 129, 189);
+    
     /* rojo */
 }
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 body {
     font-family: "Poppins", sans-serif;
@@ -147,13 +149,18 @@ h5{
 }
 
 .icono{
-    width: 100px;
+   /*  width: 100px;
     height: 100px;
     padding-top: 1px;
     margin-right: 25px;
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px; */
+    font-size: 60px;
     color: var(--color-primario);
+}
+
+.info-icono{
+  margin-left: 20px;
 }
 
 
